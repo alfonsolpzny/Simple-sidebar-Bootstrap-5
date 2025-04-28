@@ -60,7 +60,18 @@
       }
     }
   </style>
-
+  <script>
+    function changeclass() {
+      const mclass = $("#main");
+      if (mclass.hasClass('col-sm-12')) {
+        localStorage.setItem('menushow', 1)
+      } else {
+        localStorage.setItem('menushow', 0)
+      }
+      
+      $("#main").toggleClass('col-sm-10 col-sm-12');
+    }
+  </script>
 
   <!-- Custom styles for this template -->
 
